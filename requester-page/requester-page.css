@@ -2,6 +2,11 @@
     border-radius: 10%;
     height: 40%;
     width: 40%;
+    
+}
+
+.slide-in{
+    animation: slide-in 1s;
 }
 
 /*card*/
@@ -12,6 +17,7 @@
     border: 5px black solid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     position: relative;
+    
   } 
   
 .facts{
@@ -21,7 +27,13 @@
 #fact-card{
     padding: 5%;
     font-weight: light;
+    animation: slide-up ease 1.4s;
 }
+
+#donation-card{
+    animation: slide-up ease 1s;
+}
+
   button{
       transform: scale(1.1);
       position: absolute;
@@ -85,3 +97,24 @@ a{
     color: green
 }
 
+@keyframes slide-up{
+    0%{
+        position: relative;
+        bottom: -100px;
+    }
+
+    100%{
+        bottom: 0px
+    }
+}
+
+@keyframes slide-in{
+    0%{
+        position: relative;
+        left: -50px;
+    }
+
+    100%{
+        left: 0px;
+    }
+}
