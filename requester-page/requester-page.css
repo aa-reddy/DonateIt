@@ -33,10 +33,13 @@
     font-weight: light;
     text-align: center;
     animation: slide-up ease 1.4s;
+    border: solid 2px greenyellow;
+    
 }
 
 #donation-card{
     animation: slide-up ease 1s;
+    border: solid 2px greenyellow;
 }
 
   button{
@@ -106,10 +109,16 @@ a{
     0%{
         position: relative;
         bottom: -100px;
+        border: none;
+    }
+
+    50%{
+        border: greenyellow transparent;
     }
 
     100%{
-        bottom: 0px
+        bottom: 0px;
+        border: greenyellow solid;
     }
 }
 
@@ -118,6 +127,8 @@ a{
         position: relative;
         left: -50px;
     }
+
+    
 
     100%{
         left: 0px;
