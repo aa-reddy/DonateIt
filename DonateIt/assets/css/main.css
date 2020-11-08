@@ -3246,6 +3246,11 @@ h2.headertek {
 		justify-content: center; */
 	}
 
+	.cards-grid{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
 	@keyframes slideInFromLeft {
 		0% {
 		  transform: translateX(-100%);
