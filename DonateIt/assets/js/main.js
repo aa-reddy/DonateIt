@@ -178,12 +178,9 @@
 						window.clearInterval(timerId);
 					});
 
-					
-
 			// Init.
 				$window.on('load', function() {
 
-					
 					reelWidth = $reel[0].scrollWidth;
 
 					if (browser.mobile) {
@@ -213,7 +210,6 @@
 						$t._update();
 					}).trigger('resize');
 
-					
 				});
 
 		});
@@ -275,4 +271,4 @@ function update_users_count() {
 	});
 };
 
-update_users_count();
+update_users_count(); 
