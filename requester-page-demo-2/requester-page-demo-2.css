@@ -19,6 +19,11 @@
     position: relative;
     
   } 
+
+#need{
+    transform: scale(1.5);
+    color: white;
+}
   
 .facts{
     text-align: center;
@@ -26,6 +31,12 @@
 
 #nationality{
     font-weight: light;
+}
+
+#description{
+    font-size: large;
+    font-weight: light;
+    color: gray;
 }
 
 #fact-card{
@@ -104,18 +115,6 @@ a:hover{
 a{
     color: green
 }
-
-#need{
-    transform: scale(1.5);
-    color: white;
-}
-
-#description{
-    font-size: large;
-    font-weight: light;
-    color: gray;
-}
-
 
 @keyframes slide-up{
     0%{
