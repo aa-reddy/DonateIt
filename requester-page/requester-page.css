@@ -27,6 +27,7 @@
 #fact-card{
     padding: 5%;
     font-weight: light;
+    text-align: center;
     animation: slide-up ease 1.4s;
 }
 
