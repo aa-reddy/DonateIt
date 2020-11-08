@@ -18,7 +18,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2771,6 +2772,7 @@ h2.headertek {
 				padding-right: 2em;
 			}
 
+			
 	}
 
 /* Narrow */
@@ -3217,3 +3219,50 @@ h2.headertek {
 					}
 
 	}
+
+	#metrics{
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#first-submetric{
+		margin-top: 50px;
+		font-size: xx-large;
+	}
+
+	.grid-container {
+		margin-top: 100px;
+		display: grid;
+		grid-template-columns: auto;
+		/* animation: 0.5s ease-out 0s 1 slideInFromLeft; */
+		animation: fadeIn ease 5s;
+	}
+	.submetrics{
+		margin-top: 15px;
+		margin-left: 20px;
+		font-size: x-large;
+		margin-bottom: 15px;
+		/* display: flex;
+		align-items: center;
+		justify-content: center; */
+	}
+
+	@keyframes slideInFromLeft {
+		0% {
+		  transform: translateX(-100%);
+		}
+		100% {
+		  transform: translateX(0);
+		}
+	}
+	
+	@keyframes fadeIn {
+		0% {opacity:0;}
+		100% {opacity:1;}
+	}
+
+	
+
+	

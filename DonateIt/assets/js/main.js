@@ -178,9 +178,12 @@
 						window.clearInterval(timerId);
 					});
 
+					
+
 			// Init.
 				$window.on('load', function() {
 
+					
 					reelWidth = $reel[0].scrollWidth;
 
 					if (browser.mobile) {
@@ -210,8 +213,66 @@
 						$t._update();
 					}).trigger('resize');
 
+					
 				});
 
 		});
 
 })(jQuery);
+
+function update_users_count() {
+    $('#food-num b').animate({
+        counter: 132
+    }, {
+        duration: 6000,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now));
+        },
+        complete: update_users_count
+	});
+	$('#cloth-num b').animate({
+        counter: 23
+    }, {
+        duration: 6000,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now));
+        },
+        complete: update_users_count
+	});
+	$('#educ-num b').animate({
+        counter: 54
+    }, {
+        duration: 6000,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now));
+        },
+        complete: update_users_count
+	});
+
+	$('#months-num').animate({
+        counter: 30
+    }, {
+        duration: 6000,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now));
+        },
+        complete: update_users_count
+	});
+
+	$('#house-people-num').animate({
+        counter: 23
+    }, {
+        duration: 6000,
+        easing: 'swing',
+        step: function(now) {
+            $(this).text(Math.ceil(now));
+        },
+        complete: update_users_count
+	});
+};
+
+update_users_count();
